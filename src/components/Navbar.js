@@ -7,14 +7,14 @@ const Navbar =(props)=>{
   let isloggedin = props.isloggedin;
   let setisloggedin = props.setisloggedin;
     return (
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly items-center gap-x-6 w-11/12 max-w[1160] py-4 mx-auto">
             <Link>
             <img src = {logo} width ={160} height = {45} loading = "lazy"/>
             </Link>
           
 
             <nav className="ml-3">
-            <ul className="flex space-x-4">
+            <ul className="flex gap-3 text-white">
              <li>
                 <Link to ="/">
                 Home
@@ -35,21 +35,23 @@ const Navbar =(props)=>{
 
            {/* four button */}
 
-           <div className="flex gap-2">
+           <div className="flex gap-2 items-center">
             {!isloggedin &&
              <Link to = "/login">
-             <button>
-                Login
+               <button className=" bg-black  text-white py-[12px] px-[8px]
+                 rounded-[8px]"> 
+                Log in
              </button>
              </Link>
             }
            
            {  !isloggedin &&
              <Link to ="/Signup">
-             <button>
+             <button className=" bg-black 	text-white py-[12px] px-[8px]
+                 border-slate-800 rounded-[8px] ">
               
             
-                Signup
+                Sign up
              </button>
              </Link>
             }
@@ -61,14 +63,18 @@ const Navbar =(props)=>{
                 toast.success("toast liked");
               }
                 
-             }>
+             } className=" text-white py-[12px] px-[8px]
+                bg-black rounded-[8px]">
                 Log out
              </button>
              </Link>
             }
              {isloggedin &&
              <Link to= "/Dashboard">
-             <button>
+             <button className=" text-white py-[12px] px-[8px]
+              bg-black rounded-[8px]">
+             
+             
                 Dashboard
              </button>
              </Link>

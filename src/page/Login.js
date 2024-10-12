@@ -8,7 +8,7 @@ const Login = ({setisloggedin}) => {
     tittle= "welcome back X"
     desc1=  "build skill tday" 
     desc2= "education to future proof"
-    formtype="Login"
+    formtype="login"
     image={loginimg}
     setisloggedin={setisloggedin}
       />
