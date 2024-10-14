@@ -65,13 +65,13 @@ const SignupForm = ({setisloggedin}) => {
             </label>
 
             <label>
-                <p>lasttName<sup>*</sup></p>
+                <p>lastName<sup>*</sup></p>
                 <input
                 required
                 type='text'
                 placeholder='enter last name'
-                name='lasttName'
-                value={FormData.lasttName}/>
+                name='lastName'
+                value={FormData.lastName}/>
             </label>
            </div>
 

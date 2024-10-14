@@ -9,7 +9,7 @@ const Signup = ({setisloggedin}) => {
     tittle= "joins the milloners learining to each other study notion for free"
     desc1=  "build skill tday and tomorrow and beyond" 
     desc2= "education to future proof your-carrer"
-    formtype="login"
+    formtype="signup"
     image= {Signupimg}
     setisloggedin={setisloggedin}
       />
